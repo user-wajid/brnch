@@ -1,0 +1,52 @@
+class Paldromchek_num{
+
+public static void main[String arg[]{
+
+Scnanner sc=new Scanner(System.in);
+
+System.out.println("Enter your three digit num: ");
+int num=sc.nextInt();
+Paldromchek_num ref=new Paldromchek_num();
+boolean b=ref.chekpalidnum(num)
+if(b){
+System.out.println("num is pakidrom);
+}
+else{
+System.out.println("num is  not palidrom );
+}
+
+public boolean chekpalidnum(int num){
+
+int rem,int revnum=0;
+ int temp=num;
+
+   while(num>0){
+   //123 //12
+  rem=num%10;//3,2,1
+  revnum=revnum*10+rem;//3,32,321
+  num=num/10;//12,1,0
+        }
+//321==123
+if(revnum==temp){
+
+
+return true;
+}
+else{
+false;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+}
+}
